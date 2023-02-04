@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url("bgtop.jpg");
+  color: white;
+  text-shadow: 3px 3px black;
+  text-align: center;
+  padding: 1em;
+  animation: header-animation 2s ease-in-out;
+}
+
+@keyframes header-animation {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+nav {
+  background-image: url("bgnav.jpg");
+  background-size: cover;
+  text-align: center;
+  text-shadow: 1px 1px white;
+  padding: 1em;
+  animation: nav-animation 2s ease-in-out;
+}
+
+@keyframes nav-animation {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: bold;
+  animation: li-animation 2s ease-in-out;
+}
+nav li:hover {
+  font-size: larger;
+  text-shadow: 2px 2px aliceblue;
+}
+
+@keyframes li-animation {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+nav a {
+  color: black;
+  text-decoration: none;
+}
+section {
+  text-align: center;
+  padding: 1em;
+  animation: section-animation 2s ease-in-out;
+  background: url("bgex.jpg");
+}
+section ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes section-animation {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+footer {
+  background-image: url("bgnav.jpg");
+  text-align: center;
+  font-size: 18px;
+  font-weight: 350;
+  color: black;
+  text-shadow: 1px 1px white;
+  padding: 1em;
+  animation: footer-animation 2s ease-in-out;
+}
+
+@keyframes footer-animation {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
